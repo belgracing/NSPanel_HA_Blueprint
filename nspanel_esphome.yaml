@@ -44,9 +44,12 @@ substitutions:
 
 ##### WIFI SETUP #####
 wifi:
-  ssid: ${wifi_ssid}
-  password: ${wifi_password}
-  power_save_mode: none
+  networks:
+  - ssid: ${wifi_ssid1}
+    password: ${wifi_password1}
+  - ssid: ${wifi_ssid2}
+    password: ${wifi_password2}
+    power_save_mode: none
   ##### advanced config - uncomment to use static IP-Config #####
   # manual_ip:
   #   static_ip: ${ip}
